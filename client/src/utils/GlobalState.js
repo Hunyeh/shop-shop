@@ -8,6 +8,8 @@ const StoreProvider = ({value = [], ...props}) =>{ //...props used so it can be 
     // creates global state
     const [state, dispatch] = useProductReducer({
         products: [],
+        cart: [],
+        cartOpen: false,
         categories: [],
         currentCategory: '',
     });
