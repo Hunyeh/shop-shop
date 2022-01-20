@@ -43,7 +43,7 @@ export const reducer = (state, action) => {
             };
         case REMOVE_FROM_CART:
           let newState = state.cart.filter(product => {
-              return product._id !== action._id;    //this is not working with the test
+              return product._id !== action._id;  
           });
             return {
                 ...state,
